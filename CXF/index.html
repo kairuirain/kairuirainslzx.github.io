@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>操行分查询</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <a href="/index.html" class="return-home">返回首页</a>
+    <div class="container">
+        <h1>操行分查询系统</h1>
+        
+        <!-- 修改申诉按钮链接 -->
+        <a href="https://www.wjx.cn/vm/wcu55lP.aspx#" class="btn appeal-btn" style="margin-bottom: 20px;">我要申诉/举报</a>
+
+        <!-- 新增查询功能模块 -->
+        <div class="search-box">
+            <h2>学生操行分查询</h2>
+            <input type="text" id="searchName" placeholder="请输入学生姓名">
+            <button onclick="searchScore()">立即查询</button>
+        </div>
+
+        <!-- 新增查询结果展示区域 -->
+        <div class="result" id="result" style="display: none;">
+            <h3 id="studentName"></h3>
+            <div class="score" id="totalScore"></div>
+            <h4>每日明细：</h4>
+            <ul class="detail-list" id="dailyDetails"></ul>
+            <div id="comment"></div>
+        </div>
+
+        <!-- 原有数据展示功能 -->
+        <button id="showData" class="btn">查看数据</button>
+        <div id="imageContainer"></div>
+    </div>
+    
+    <!-- 新增脚本引用 -->
+    <script src="/js/cxf.js"></script>
+    <script src="/CXF/script.js"></script>
+</body>
+</html>
