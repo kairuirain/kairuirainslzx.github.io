@@ -72,3 +72,46 @@
 .container {
     margin-bottom: 100px;
 }
+
+/* 新增导航框样式 */
+.nav-box {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+/* 标题增强样式 */
+h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 统一按钮悬停效果 */
+.btn:hover, 
+.download-btn:hover, 
+.appeal-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+/* 响应式设计调整 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .nav-box {
+        margin: 10px 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
